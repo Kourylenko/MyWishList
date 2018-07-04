@@ -5,18 +5,21 @@
   <title> My wish list</title>
 </head>
 <body>
-  <form autocomplete="on">
+  <form action="./mylist.html" autocomplete="on">
     <h2> Номер </h2>
-    <input type="text" name="name" id="numb" value="0554656478">
+    <input type="tel" name="phone" id="phone" value="Ваше имя" required>
+    
     <h2> Пароль </h2>
-    <input type="password" name="password" id="pass" value="123456">
+    <input type="password" name="password" id="pass" value="111111" required>
     <br><br>
+    
     <input type="submit" value="Вход">
   </form>
   <br>
-  <form>
-  <input type="button" name="registration" value="Регистрация" onclick="registration.html">
-</form>
+  <!-- В будущем употребление тега forma что ниже, нужно заменить на ссылку --> 
+  <form action="./registration.html">
+    <button type="submit"> Регистрация </button>
+  </form>
 </body>
 </html>
 
