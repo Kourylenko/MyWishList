@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Форма регистрации</title>
 </head>
 <body>
   <form action="./account.html" autocomplete="on">
     <h2> Имя </h2>
-    <input type="text" name="neme" id="name" value="Tanya" required>
+    <input type="text" name="neme" id="name" placeholder="Ваше имя" required value="Имя">
     
     <h2> Дата рождения: </h2>
-    <input type="date" name="date" id="birthday" required>
+    <input type="date" name="date" id="birthday" ><!--  добавить required -->
     
     <h2> Номер мобильного по которому Вас найдут ваши друзья </h2>
-    <input type="tel" name="phone" id="phone" value="0554656478" required>
+    <input type="tel" name="phone" id="phone" placeholder="Номер телефона" required value="0667788999">
     
     <h2> Пароль </h2>
     <input type="password" name="password" id="pass" value="123456" required>
