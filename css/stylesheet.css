@@ -1,6 +1,23 @@
-p {
-	color: red;
+body {
+	background: #fbe9e7;
+	font-size: 25px;
+	max-width: 600px;
+	margin: 0 auto;
+	border: 2px solid black;
 }
+
+
 input {
-	background: green;
+	background:#efefef;
+	border: 2px solid #c8b7b5;
+}
+
+label {
+	font-size:25px;
+	color:red;
+}
+
+.page {
+	float: top;
+	padding: 10%;
 }

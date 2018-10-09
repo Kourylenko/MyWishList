@@ -5,30 +5,25 @@
   <title>Мой список</title>
   <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
 </head>
-<body>
+<body class="container">
+  <div class="page">
   <a href="./menu.html"><img src="./image/1.png" width="25" height="25" ></a> 
   <p>Мой список</p>
   <div id="name">Имя</div>
   <div id="birthday">Дата рождения</div>
   <div>
-    <ul>
+    <ul id="itemList">
       <li>Lorem ipsum dolor.</li>
       <li>Incidunt dolore, corporis?</li>
-      <li>Saepe, sed, reprehenderit.</li>
-      <li>Omnis, eos ad.</li>
-      <li>Eum, impedit, adipisci.</li>
-      <li>Corporis, quas harum.</li>
-      <li>Veritatis, magni libero!</li>
-      <li>Eius repudiandae, nulla!</li>
-      <li>Voluptas, assumenda, praesentium!</li>
-      <li>Doloremque, voluptate ab.</li>
     </ul>
   </div>  
-  <form>
+  
     <p>Добавить новый предмет в список</p>
-    <textarea id="item"></textarea>
+    <textarea id="itemText"></textarea>
     <br>
-    <button>Добавить</button>
-  </form>
+    <button id="addItem">Добавить</button>
+  
+
+<script type="text/javascript" src="./js/wishList.js"></script>
 </body>
 </html>
