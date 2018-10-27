@@ -1,19 +1,22 @@
-var itemList = document.getElementById ("itemList");
-var itemText = document.querySelector ("#itemText");
-var addItem = document.querySelector ("#addItem");
-
-
-
-
-addItem.addEventListener("click", function() {
-	var li = document.createElement("li");
-	li.appendChild(document.createTextNode(itemText.value));
-	itemList.appendChild(li);
-	itemText.value = "";
+// Check Off Specific Todo By Clicking
+$("ul").on("click", "li", function(){
+	$(this).toggleClass("completed");
 });
-
-
-
-// генерировать новый предмет в списке
-
-// по клику переносим текст в список айтемов
+	
+// Clik on X to delete Todo
+$("ul").on("click", "span", function(event){
+	$(this).parent().fadeOut(function(){
+		$(this).remove();
+	});
+	event.stopPropagation();
+});
+	
+$("input[type = 'text']").keypress(function(event){
+	if(event.which === 13){
+		//grabbing new todo text from input
+		var todoText = $(this).val();
+		$(this).val("");
+		//create a new li and add to ul
+		$("ul").append("<li><span>X</span>" + " " + todoText +"</li>")
+	}
+});

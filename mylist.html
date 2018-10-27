@@ -4,24 +4,29 @@
   <meta charset="utf-8">
   <title>Мой список</title>
   <link rel="stylesheet" type="text/css" href="./css/stylesheet.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
 </head>
-<body class="container">
+
+<body>
+
   <div class="page">
   <a href="./menu.html"><img src="./image/1.png" width="25" height="25" ></a> 
   <p>Мой список</p>
   <div id="name">Имя</div>
   <div id="birthday">Дата рождения</div>
-  <div>
+  
+
+  <div class="container">
+    <h1>Добавить </h1>
+    <input type="text" name="addItem" placeholder="Добавить новий объект ">
     <ul id="itemList">
-      <li>Lorem ipsum dolor.</li>
-      <li>Incidunt dolore, corporis?</li>
+      <li><span>X</span> Цветы</li>
+      <li><span>X</span> Конфеты</li>
+      <li><span>X</span> Пряники</li>
     </ul>
   </div>  
   
-    <p>Добавить новый предмет в список</p>
-    <textarea id="itemText"></textarea>
-    <br>
-    <button id="addItem">Добавить</button>
   
 
 <script type="text/javascript" src="./js/wishList.js"></script>
